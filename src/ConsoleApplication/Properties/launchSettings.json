@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ConsoleApplication": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\Development\\ManagedDismCodePlex\\Microsoft.Dism\\Microsoft.Dism.csproj"
+    }
+  }
+}

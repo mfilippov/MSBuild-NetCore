@@ -1,5 +1,6 @@
 ﻿using Microsoft.Build.Evaluation;
 using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace ConsoleApplication
@@ -22,7 +23,12 @@ namespace ConsoleApplication
                 return 2;
             }
 
-            Project project = new Project(projectPath);
+            IDictionary<string,string> globalProperties = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+            {
+                { "MSBuildExtensionsPath", AppContext.BaseDirectory } // Workaround the MSBuildExtensionsPath being set wrong by MSBuild
+            };
+
+            Project project = new Project(projectPath, globalProperties, toolsVersion: null);
 
             Console.WriteLine($"Successfully loaded project file '{projectPath}'.");
 

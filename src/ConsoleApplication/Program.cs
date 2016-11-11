@@ -23,12 +23,7 @@ namespace ConsoleApplication
                 return 2;
             }
 
-            IDictionary<string,string> globalProperties = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
-            {
-                { "MSBuildExtensionsPath", AppContext.BaseDirectory } // Workaround the MSBuildExtensionsPath being set wrong by MSBuild
-            };
-
-            Project project = new Project(projectPath, globalProperties, toolsVersion: null);
+            Project project = new Project(projectPath);
 
             Console.WriteLine($"Successfully loaded project file '{projectPath}'.");
 

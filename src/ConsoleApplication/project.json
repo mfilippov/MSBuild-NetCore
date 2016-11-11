@@ -8,8 +8,8 @@
       "type": "platform",
       "version": "1.0.1"
     },
-    "Microsoft.Build.Runtime": "15.1.0-preview-000370-00",
-    "Microsoft.Build": "15.1.0-preview-000370-00",
+    "Microsoft.Build.Runtime": "15.1.0-preview-000388-01",
+    "Microsoft.Build": "15.1.0-preview-000388-01",
     "Microsoft.Net.Compilers.netcore": "2.0.0-rc3-61110-06",
     "Microsoft.CodeAnalysis.Build.Tasks": "2.0.0-rc3-61110-06"
   },

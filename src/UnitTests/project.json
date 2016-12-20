@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "Microsoft.NETCore.App": "1.0.1",
+    "xunit.core": "2.1.0",
+    "xunit.assert": "2.1.0",
+    "xunit.runner.visualstudio": "2.1.0"
+  },
+  "testRunner": "xunit",
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "portable-net45+win8+wp8+wpa81"
+    }
+  },
+  "runtimes": {
+    "win10": {},
+    "osx.10.10": {},
+    "ubuntu.14.04": {}
+    //"ubuntu.16.04-64": {}
+  }
+}
